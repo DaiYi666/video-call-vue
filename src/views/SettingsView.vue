@@ -19,8 +19,15 @@
 
   <section>
     <van-cell-group inset>
-      <van-cell title="去GitHub star一下" value="GO" clickable url=""/>
-      <van-cell title="去Gitee star一下" value="GO" clickable url=""/>
+      <van-cell title="去GitHub star一下"
+                value="GO"
+                url=""
+                clickable/>
+
+      <van-cell title="去Gitee star一下"
+                value="GO"
+                url="https://gitee.com/daiyi-personal/video-call-vue.git"
+                clickable/>
     </van-cell-group>
   </section>
 
