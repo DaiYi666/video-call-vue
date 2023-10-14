@@ -1,7 +1,3 @@
-<video src="https://qiniu.beiyoufamily.tianmigangwan.cn/2023.10/Tmanal.mp4"></video>
-
-<h1>关键词</h1>
-
 # 关键词
 
 VUE视频通话
