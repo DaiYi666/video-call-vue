@@ -5,8 +5,8 @@ import {showToast} from "vant";
 
 export default {
     install(app) {
-        console.log("invoked initialization peer plugin");
-        app.config.globalProperties.$initializationPeer = new Promise(resolve => {
+        console.log("invoked initialize peer plugin");
+        app.config.globalProperties.$initializePeer = new Promise(resolve => {
             let peerStore = usePeerStore();
 
             let {host, port, path} = {...networkConfiguration.server.peerServer};

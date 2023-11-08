@@ -6,8 +6,8 @@ import {showToast} from "vant";
 
 export default {
     install(app) {
-        console.log("invoked initialization web socket plugin");
-        app.config.globalProperties.$initializationPeer?.then(() => {
+        console.log("invoked initialize websocket plugin");
+        app.config.globalProperties.$initializePeer?.then(() => {
             let peerStore = usePeerStore();
             let friendStore = useFriendStore();
 
