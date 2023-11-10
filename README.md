@@ -131,8 +131,11 @@ GitHub
 
 后台: [https://github.com/DaiYi666/video-call-java.git](https://github.com/DaiYi666/video-call-java.git)
 
-## 打赏
+# 加群探讨
+加入QQ群一起探讨问题及bug
+![img_12.png](src/assets/document-illustrations/img_12.jpeg)
 
+## 打赏
 如果您觉得这个demo对您有用；
 不如请作者喝一杯可乐，一分两分皆是情，一块两块皆是爱。
 ![img_10.png](src/assets/document-illustrations/img_10.png)
