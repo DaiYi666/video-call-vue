@@ -38,6 +38,14 @@
   </section>
 
   <section>
+    <van-dialog v-model:show="showQQGroupQrCodeImage"
+                show-cancel-button>
+      <van-image :src="groupQrCodeImage"/>
+      <van-divider>加入QQ群和大家一起摆龙门阵（聊天）</van-divider>
+    </van-dialog>
+  </section>
+
+  <section>
     <van-tabbar v-model="activatedTabBarItemIndex"
                 safe-area-inset-bottom
                 placeholder>
@@ -63,9 +71,12 @@ export default {
 
 <script setup>
 import {ref, watch} from "vue";
-import usePeerStore from "@/store/peer";
 import {showLoadingToast} from "vant";
 import {useRouter} from "vue-router";
+import groupQrCodeImage from "@/assets/document-illustrations/img_12.jpeg";
+import usePeerStore from "@/store/peer";
+
+let showQQGroupQrCodeImage = ref(true);
 
 let activatedTabBarItemIndex = ref(0);
 

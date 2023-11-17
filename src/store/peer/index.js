@@ -13,7 +13,6 @@ export default defineStore("peerStore", {
             dataConnection: undefined,
             /**
              * 正在通话的媒体连接对象
-             * @function mediaConnection.on
              */
             mediaConnection: undefined,
             /**
