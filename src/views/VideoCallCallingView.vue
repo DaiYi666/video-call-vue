@@ -55,6 +55,7 @@ let isConnected = ref(false);
 onMounted(() => {
   getLocalUserMedia({audio: true, video: true}).then(userMedia => {
     mainVideo.value.srcObject = userMedia;
+    mainVideo.value.muted = true;
     localUserMedia.value = userMedia;
 
     peerStore.dataConnection = peerStore.localPeer.connect(route.query.calleePeerId);
@@ -64,8 +65,10 @@ onMounted(() => {
         peerStore.mediaConnection = peerStore.localPeer.call(route.query.calleePeerId, localUserMedia.value);
         peerStore.mediaConnection.on("stream", userMedia => {
           mainVideo.value.srcObject = userMedia;
+          mainVideo.value.muted = false;
           //视图互换一下，把对方放在主视图上
           secondaryVideo.value.srcObject = localUserMedia.value;
+          secondaryVideo.value.muted = true;
           isConnected.value = true;
           showToast("connected");
         });
